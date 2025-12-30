@@ -6,8 +6,6 @@ permalink: /about/
 
 # Hi! I'm Lorenzo
 
-I'm a blockchain developer, problem solver, serial complexity unpacker, a DJ, and above all figuring it out.
+As of right now I'm a blockchain developer.
 
-I love diving into complex topics, my current interests are Blockchain and Machine Learning.
-I love to work with people and solve problems in a collaborative setting.
-At some point I will have my DJ work on here and maybe some music
+In my free time I love to explore new problems, DJ, and figure things out.
