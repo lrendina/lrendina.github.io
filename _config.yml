@@ -18,11 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Lorenzo Rendina Blog
+title: Lorenzo Rendina
 email: lorenzo@lorenzorendina.com
 description: >- # this means to ignore newlines until "baseurl:"
   Personal website of Lorenzo Rendina, a developer specializing in blockchain.
-  Exploring crypto, payments, and people.
   Occasional blog posts about whatever I think is cool.
 domain: lorenzorendina.com
 baseurl: "" # the subpath of your site, e.g. /blog
