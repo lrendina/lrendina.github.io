@@ -1,0 +1,95 @@
+@import "tailwindcss";
+@import "katex/dist/katex.min.css";
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --accent: #34d399;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Notion-style prose */
+.prose {
+  @apply max-w-none text-[15px] leading-[1.5];
+}
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  @apply font-semibold text-white;
+  scroll-margin-top: 5rem;
+}
+.prose h1 { @apply text-[40px] mt-[2em] mb-[1em]; }
+.prose h2 { @apply text-[32px] mt-[1.5em] mb-[0.75em]; }
+.prose h3 { @apply text-[24px] mt-[1.5em] mb-[0.75em]; }
+.prose h4 { @apply text-[20px] mt-[1.5em] mb-[0.5em]; }
+.prose h5 { @apply text-[18px] mt-[1.5em] mb-[0.5em]; }
+.prose h6 { @apply text-[16px] mt-[1.5em] mb-[0.5em]; }
+.prose p {
+  @apply my-[0.75em] leading-[1.5] text-white/80;
+}
+.prose ul,
+.prose ol {
+  @apply my-[0.75em] pl-[1.5em] text-white/80;
+}
+.prose li {
+  @apply leading-[1.5];
+}
+.prose li::marker {
+  @apply text-white/40;
+}
+.prose blockquote {
+  @apply my-[1em] border-l-2 border-white/20 pl-[1em] italic text-white/60 not-italic;
+}
+.prose blockquote p {
+  @apply text-white/60;
+}
+.prose a {
+  @apply underline decoration-white/30 hover:decoration-white/60 text-white;
+}
+.prose strong {
+  @apply font-semibold text-white;
+}
+.prose em {
+  @apply italic text-white/90;
+}
+.prose code {
+  @apply rounded bg-white/10 px-[0.25em] py-[0.125em] text-[0.875em] font-mono text-white;
+}
+.prose pre {
+  @apply my-[1em] rounded-lg bg-black/30 p-[1em] text-[0.875em] leading-[1.5];
+}
+.prose pre code {
+  @apply bg-transparent p-0 text-white;
+}
+.prose hr {
+  @apply my-[2em] border-white/10;
+}
+.prose table {
+  @apply my-[1em] w-full border-collapse text-[0.875em];
+}
+.prose th,
+.prose td {
+  @apply border border-white/10 px-[0.75em] py-[0.5em] text-left;
+}
+.prose th {
+  @apply bg-white/5 font-semibold;
+}
+.prose img {
+  @apply my-[1em] rounded-lg shadow-lg;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
